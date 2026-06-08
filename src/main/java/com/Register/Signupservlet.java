@@ -43,7 +43,7 @@ public class Signupservlet extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/register", "root", "tanishka");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/register", "YOUR_USERNAME", "YOUR_PASSWORD");
 
 			PreparedStatement stmt = con
 					.prepareStatement("insert into userlogin(uname, upass, uemailId, ucountry) values(?,?,?,?)");
